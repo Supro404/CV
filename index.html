@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supravat Dey | Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #e8eef7, #f8f9fc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        .profile-card {
+            width: 100%;
+            max-width: 850px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .header h1 {
+            font-size: clamp(28px, 5vw, 44px);
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .image-container {
+            padding: 25px 25px 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 760px;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: auto;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .details {
+            padding: 25px 35px 35px;
+        }
+
+        .details h2 {
+            text-align: center;
+            color: #172554;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .info-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .info-box .label {
+            color: #64748b;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .info-box .value {
+            color: #172554;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .info {
+                grid-template-columns: 1fr;
+            }
+
+            .details {
+                padding: 25px 20px;
+            }
+
+            .image-container {
+                padding: 15px 15px 5px;
+            }
+
+            .header {
+                padding: 28px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Supravat Dey</h1>
+            <p>Personal Profile</p>
+        </header>
+
+        <!-- Convocation Image -->
+        <div class="image-container">
+            <img
+                src="B1LE0584.jpg"
+                alt="Supravat Dey at Jadavpur University Convocation 2024"
+            >
+        </div>
+
+        <!-- Personal Details -->
+        <section class="details">
+
+            <h2>About Me</h2>
+
+            <div class="info">
+
+                <div class="info-box">
+                    <div class="label">Name</div>
+                    <div class="value">Supravat Dey</div>
+                </div>
+
+                <div class="info-box">
+                    <div class="label">Age</div>
+                    <div class="value">26+</div>
+                </div>
+
+                <div class="info-box">
+                    <div class="label">Education 1</div>
+                    <div class="value">JU BCSE</div>
+                </div>
+
+                <div class="info-box">
+                    <div class="label">Education 2</div>
+                    <div class="value">BIT DME</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2026 Supravat Dey | Personal Profile
+        </footer>
+
+    </div>
+
+</body>
+</html>
